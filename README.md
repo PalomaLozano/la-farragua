@@ -1,6 +1,6 @@
 # <h3> La Farragua </h3>
 
-<h4><italic><bold><E-Commerce Project.</bold></italic></h4>
+<h4><bold>E-Commerce Project.</bold></h4>
 
 React :star:
 Node js :star:
