@@ -108,7 +108,7 @@ const Slider = () => {
       setSlideIndex(slideIndex > 0 ? slideIndex-1 : 2);
 
     }else {
-      setSlideIndex(slideIndex < 2 ? slideIndex +1 : 0);
+      setSlideIndex(slideIndex < 3 ? slideIndex +1 : 0);
     }
     }
 
@@ -119,7 +119,7 @@ const Slider = () => {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
       {sliderItems.map((item) =>(
-        <Slide bg={item.bg}>
+        <Slide bg={item.bg} key={item.id}>
           <ImgContainer>
             <Image src={item.img}/>
           </ImgContainer>

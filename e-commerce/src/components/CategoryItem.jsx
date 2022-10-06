@@ -29,6 +29,11 @@ justify-content: center;
 const Title = styled.h1`
 color: whitesmoke; 
 margin-bottom: 20px; 
+font-size: 13px;
+text-align: center;
+@media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 const Button = styled.button`
 border: none;

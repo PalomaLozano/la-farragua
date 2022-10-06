@@ -4,7 +4,7 @@ export const sliderItems = [
       img: "https://i.ibb.co/cXFnLLV/3.png",
       title: "AUTUMN SALE",
       desc: "30% de descuento en tu primera compra",
-      bg: "f5fafd",
+      bg: "ffc300",
     },
     {
       id: 2,
@@ -18,8 +18,15 @@ export const sliderItems = [
       img: "https://i.ibb.co/cXFnLLV/3.png",
       title: "LOVE & LOVE",
       desc: "30% de descuento en tu primera compra",
-      bg: "fbf0f4",
+      bg: "ffc300",
     },
+    {
+      id: 4,
+      img: "https://i.ibb.co/DG69bQ4/2.png",
+      title: "NUEVOS ESTILOS",
+      desc: "30% de descuento en tu primera compra",
+      bg: "fcf1ed",
+    }
   ];
 
   export const categories = [
@@ -47,7 +54,7 @@ export const sliderItems = [
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
     },
     {
       id:3,
@@ -67,8 +74,9 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
     },
+
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
