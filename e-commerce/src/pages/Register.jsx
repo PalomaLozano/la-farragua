@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
 width: 100vw; 
 height: 100vh; 
-background: linear-gradient(rgb(255,255,255, 0.5), rgb(255,255,255, 0.1)), url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")center;
+background: linear-gradient(rgb(255,255,255, 0.5), rgb(255,255,255, 0.1)), url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")right;
 background-size: cover;
 display: flex;
 align-items: center;  
@@ -13,9 +13,12 @@ justify-content: center;
 `;
 
 const Wrapper = styled.div`
-width: 40%; 
+width: 60%; 
 padding: 20px; 
 background-color: white; 
+@media screen and (min-width: 768px) {
+  width: 40%; 
+  }
 
 `;
 
@@ -35,6 +38,10 @@ flex: 1;
 min-width: 40%; 
 margin: 20px 10px 0px 0px; 
 padding: 10px; 
+height: 16px; 
+@media screen and (min-width: 768px) {
+  height: 20px; 
+  }
 `;
 
 const Agreement = styled.span`
@@ -48,6 +55,7 @@ border: none;
 padding: 15px 20px; 
 background-color: salmon; 
 color: white;
+border-radius: 10px; 
 `;
 
 

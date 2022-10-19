@@ -6,11 +6,13 @@ import { sliderItems } from "../data";
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   position: relative;
   overflow: hidden; 
-  //background-color: #ffc300;
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
 `;
 
 const Arrow = styled.div`
@@ -37,18 +39,24 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   transition: all 1.5s ease; 
-  transform: translateX(${props => props.slideIndex * -100}vw)
-
+  transform: translateX(${props => props.slideIndex * -100}vw);
+  @media screen and (min-width: 768px) {
+    
+    height: 100%;
+  }
 
 `;
 
 const Slide = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center; 
-  background-color: #${props => props.bg}
+  background-color: #${props => props.bg};
+  @media screen and (min-width: 768px) {
+  height: 100vh;
+  }
 `;
 
 const ImgContainer = styled.div`
@@ -74,11 +82,13 @@ const Title = styled.h1`
   }
 `;
 const Description = styled.p`
+  max-width: 120px; 
   margin: 10px 0px;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 2px;
   @media screen and (min-width: 768px) {
+    max-width: 320px; 
     margin: 50px 0px;
     font-size: 20px;
     font-weight: 500px;
@@ -90,7 +100,8 @@ const Button = styled.button`
   font-size: 15px;
   border: 2px solid #900C3F; 
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #900C3F;
+  color: white; 
   cursor: pointer;
   @media screen and (min-width: 768px) {
     padding: 10px;

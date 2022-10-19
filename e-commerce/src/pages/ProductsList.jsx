@@ -9,30 +9,50 @@ import Footer from "../components/Footer";
 const Container = styled.div``;
 
 const Title = styled.h1`
-  margin: 20px;
+  margin: 25px;
 `;
 
 const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
 `;
 
 const ProductFilter = styled.div`
-  margin: 20px;
+  margin: 25px;
+  
+  
 `;
 
 const FilterText = styled.span`
-  font-size: 20px;
+  display: flex; 
+  font-size: 16px;
   font-weight: 600;
   margin-right: 20px; 
+  
+ 
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const Select = styled.select`
-padding: 10px; 
-margin-right: 20px; 
+
+border: 1px solid lightsalmon;  
+margin-right: 10px; 
+margin-top: 10px; 
+width: 100px; 
+height: 30px; 
+@media screen and (min-width: 768px) {
+ padding: 10px; 
+ height: 40px; 
+
+  }
 `;
 
-const Option = styled.option``;
+const Option = styled.option`
+
+`;
 
 const ProductsList = () => {
   return (
@@ -42,7 +62,7 @@ const ProductsList = () => {
       <Title>Vestidos</Title>
       <FilterContainer>
         <ProductFilter>
-          <FilterText>Filtrar Productos:</FilterText>
+          <FilterText>Filtros:</FilterText>
           <Select>
             <Option disabled selected>
               Color
@@ -67,7 +87,7 @@ const ProductsList = () => {
           </Select>
         </ProductFilter>
         <ProductFilter>
-          <FilterText>Ordenar Productos:</FilterText>
+          <FilterText>Precio:</FilterText>
           <Select>
             <Option selected>
               Recientes

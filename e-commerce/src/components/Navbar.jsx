@@ -3,13 +3,16 @@ import styled from "styled-components";
 import { VscSearch} from "react-icons/vsc";
 import { FaShoppingCart } from "react-icons/fa";
 
+
 //import Logo from "../assets/small-logo.png";
 const Container = styled.div`
 background-color: black;
 color: black;
 @media screen and (min-width: 768px) {
-}
+    
+  }
 `;
+
 
 const Wrapper = styled.div`
   padding: 10px 20px;

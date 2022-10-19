@@ -4,126 +4,132 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
-import {MdOutlineRemoveCircleOutline} from "react-icons/md";
-import {MdAddCircleOutline} from "react-icons/md";
-
+import { MdOutlineRemoveCircleOutline } from "react-icons/md";
+import { MdAddCircleOutline } from "react-icons/md";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
-padding: 20px;
-display: flex; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const ImgContainer = styled.div`
-flex: 1; 
-
+  flex: 1;
 `;
+
 const InfoContainer = styled.div`
-flex: 1; 
-padding: 0px 50px; 
+  flex: 1;
+  
+  @media screen and (min-width: 768px) {
+    flex: 1;
+    padding: 0px 50px;
+  }
 `;
 
 const Image = styled.img`
-width: 100%; 
-height: 90vh; 
-object-fit: cover; 
-
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  width: 100%; 
+  height: 60vh;
+  object-fit: cover;
+  
+  @media screen and (min-width: 768px) {
+    height: 90vh;
+    object-fit: cover;
+  }
 `;
 
 const Title = styled.h1`
-font-weight: 200;
+  font-weight: 200;
+  
 `;
 const Description = styled.p`
-margin: 20px 0px;
+  margin: 20px 0px;
 `;
 const Price = styled.span`
-font-weight: 100;
-font-size: 40px;
-
+  font-weight: 100;
+  font-size: 40px;
 `;
 
 const FilterContainer = styled.div`
-width: 50%; 
-margin: 30px 0px; 
-display: flex; 
-justify-content: space-between; 
-
+  width: 50%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Filter = styled.div`
-display: flex; 
-align-items: center; 
+  display: flex;
+  align-items: center;
 `;
 
 const FilterTitle = styled.span`
-font-size: 20px; 
-font-weight: 200; 
+  font-size: 20px;
+  font-weight: 200;
 `;
 
 const FilterColor = styled.div`
-width: 20px; 
-height: 20px; 
-border-radius: 50%; 
-background-color: ${props=>props.color};
-margin: 0px 5px; 
-cursor: pointer; 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  margin: 0px 5px;
+  cursor: pointer;
 `;
 
 const FilterSize = styled.select`
-margin-left: 10px; 
-padding: 5px; 
-border: 1px solid salmon; 
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid salmon;
 `;
 
-const FilterSizeOption = styled.option`
-`;
+const FilterSizeOption = styled.option``;
 
-const AddContainer = styled.div`
-
-`;
+const AddContainer = styled.div``;
 const AmountContainer = styled.span`
-display: flex;
-flex-direction: row; 
-
+  display: flex;
+  flex-direction: row;
 `;
 
 const Remove = styled.div`
-padding-top: 8px; 
-cursor: pointer ;
+  padding-top: 8px;
+  cursor: pointer;
 `;
 
 const Amount = styled.span`
-width: 30px; 
-height: 30px; 
-border-radius: 10px; 
-border: 1px solid salmon; 
-display: flex; 
-align-items: center; 
-justify-content: center; 
-margin: 0px 5px; 
-
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
 `;
 
 const Add = styled.div`
-padding-top: 8px; 
-cursor: pointer ;
+  padding-top: 8px;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
-margin-top: 20px;
-padding: 15px; 
-border: 1px solid salmon; 
-border-radius: 10px; 
-background: salmon; 
-cursor: pointer; 
-color: white; 
-&:hover{
-background-color: #FFA777;
-}
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid salmon;
+  border-radius: 10px;
+  background: salmon;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    background-color: #ffa777;
+  }
 `;
-
-
 
 const ProductDetail = () => {
   return (
@@ -145,40 +151,38 @@ const ProductDetail = () => {
           <Price>20€</Price>
           <FilterContainer>
             <Filter>
-                <FilterTitle>Color</FilterTitle>
-                <FilterColor color="black"/>
-                <FilterColor color="grey"/>
-                <FilterColor color="darkblue"/>
+              <FilterTitle>Color</FilterTitle>
+              <FilterColor color="black" />
+              <FilterColor color="grey" />
+              <FilterColor color="darkblue" />
             </Filter>
             <Filter>
-                <FilterTitle>Talla</FilterTitle>
-                <FilterSize>
-                    <FilterSizeOption>XS</FilterSizeOption>
-                    <FilterSizeOption>S</FilterSizeOption>
-                    <FilterSizeOption>M</FilterSizeOption>
-                    <FilterSizeOption>L</FilterSizeOption>
-                    <FilterSizeOption>XL</FilterSizeOption>
-                    <FilterSizeOption>XXL</FilterSizeOption>
-                </FilterSize>
+              <FilterTitle>Talla</FilterTitle>
+              <FilterSize>
+                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>S</FilterSizeOption>
+                <FilterSizeOption>M</FilterSizeOption>
+                <FilterSizeOption>L</FilterSizeOption>
+                <FilterSizeOption>XL</FilterSizeOption>
+                <FilterSizeOption>XXL</FilterSizeOption>
+              </FilterSize>
             </Filter>
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-                
-                <Remove>
-            <MdOutlineRemoveCircleOutline/>
-            </Remove>
-                <Amount>1</Amount>
-                <Add>
+              <Remove>
+                <MdOutlineRemoveCircleOutline />
+              </Remove>
+              <Amount>1</Amount>
+              <Add>
                 <MdAddCircleOutline />
-                </Add>
-                
+              </Add>
             </AmountContainer>
             <Button>Añadir a la cesta</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-      
+
       <Newsletter />
       <Footer />
     </Container>

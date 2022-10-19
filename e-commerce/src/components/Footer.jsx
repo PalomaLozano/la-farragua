@@ -10,6 +10,7 @@ import {HiOutlineMail} from "react-icons/hi";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  background-color:#FFF5EC;
   @media screen and (min-width: 768px) {
     flex-direction: row;
 }

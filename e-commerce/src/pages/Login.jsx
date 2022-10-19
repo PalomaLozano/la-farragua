@@ -6,7 +6,7 @@ const Container = styled.div`
   height: 100vh;
   background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.1)),
     url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-      center;
+      right;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -14,9 +14,12 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 25%;
+  width: 50%;
   padding: 20px;
   background-color: white;
+  @media screen and (min-width: 768px) {
+    width: 25%;
+  }
 `;
 
 const Title = styled.h1`

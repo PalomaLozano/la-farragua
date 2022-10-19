@@ -6,8 +6,11 @@ import {categories} from "../data";
 const Container = styled.div`
 flex:1;
 margin: 3px; 
-height: 70vh;
+height: 45vh;
 position: relative;
+@media screen and (min-width: 768px) {
+  height: 70vh;
+  }
 `;
 const Image = styled.img`
 width: 100%;
